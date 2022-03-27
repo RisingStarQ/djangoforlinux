@@ -14,4 +14,4 @@ def index(request):
         # user_list.append(temp)
         models.userInfo.objects.create(user = username, pwd = password)
     user_list = models.userInfo.objects.all()
-    return render(request, 'index.html', {'data': user_list})
+    return render(request, 'login/index.html', {'data': user_list})
