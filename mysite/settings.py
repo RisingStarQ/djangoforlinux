@@ -31,6 +31,13 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
+# django.contrib.admin：admin管理后台站点
+# django.contrib.auth：身份认证系统
+    #admin后台管理系统中的Groups和Users模型
+# django.contrib.contenttypes：内容类型框架
+# django.contrib.sessions：会话框架
+# django.contrib.messages：消息框架
+# django.contrib.staticfiles：静态文件管理框架
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -55,6 +62,7 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'mysite.urls'
 
 #[BASE_DIR / 'templates/login'],
+#TEMPLATES配置项描述了 Django 如何载入和渲染模板
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
