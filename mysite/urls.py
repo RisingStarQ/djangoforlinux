@@ -19,6 +19,7 @@ from django.urls import include, path
 
 #path('index/', views.index) 路由转发用户请求到views.index视图函数
 urlpatterns = [
+	path('polls/', include('polls.urls')),
 	path('index/', include('login.urls')),
     path('admin/', admin.site.urls),
 ]
