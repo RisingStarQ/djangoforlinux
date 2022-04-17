@@ -18,3 +18,15 @@ def index(request):
     user_list = models.userInfo.objects.all()
     # return HttpResponse('Hello World!')
     return render(request, 'login/index.html', {'data': user_list})
+
+def index2(request):
+    return HttpResponse('当前的命名空间是%s'% request.resolver_match.namespace)
+
+def detail(request):
+    if request.resolver_match.namespace == 'author':
+        return HttpResponse('这里是作者的页面')
+    elif request.resolver_match.namespace == 'publisher':
+        return HttpResponse('这里是出版商的页面！')
+    else:
+        return HttpResponse('去玩儿把！')
+

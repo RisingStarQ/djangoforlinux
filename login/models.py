@@ -67,3 +67,15 @@ class Student(models.Model):
 
 	def __str__(self):
 		return self.name
+
+'''
+自定义类方法练习
+'''
+class Book(models.Model):
+	title = models.CharField(max_length=300)
+
+	@classmethod
+	def create(cls, title):
+		book = cls(title = title)
+		print('测试一下是否正常中作')
+		return book
