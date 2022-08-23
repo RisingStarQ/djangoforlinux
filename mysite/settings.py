@@ -27,7 +27,7 @@ SECRET_KEY = 'pkd_5^#hb)gm*9@67cq=k6nvoaw^i&mj9q_%12u@4==pzyb8g)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['110.42.137.92']
 
 
 # Application definition
@@ -95,7 +95,7 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'django_risingq',
+        'NAME': 't_django_linux',
         'USER': 'root',
         'PASSWORD': '123456',
         'HOST': '127.0.0.1',

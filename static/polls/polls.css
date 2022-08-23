@@ -1,0 +1,13 @@
+div {
+    width: 192px;
+    height: 192px;
+    background: white url("images/logo-mi2.png") no-repeat;
+}
+
+/* li a {
+    color: red;
+} */
+
+a:hover {
+    color:red;
+}
