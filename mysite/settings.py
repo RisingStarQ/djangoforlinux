@@ -95,7 +95,7 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'django_risingq',
+        'NAME': 'djangoforlinux',
         'USER': 'root',
         'PASSWORD': '123456',
         'HOST': '127.0.0.1',
